@@ -17,11 +17,11 @@ node(){
 	}
 	
 	stage('Code Scan'){
-		def scannerHome = tool 'SonarScanner';
+		/*def scannerHome = tool 'SonarScanner';
 		    withSonarQubeEnv('My SonarQube Server') { // If you have configured more than one global server connection, you can specify its name
 		      sh "${scannerHome}/bin/sonar-scanner"
 		    }
-		/*withSonarQubeEnv(credentialsId: 'SonarQubeCreds') {
+		withSonarQubeEnv(credentialsId: 'SonarQubeCreds') {
 			sh "${sonarHome}/bin/sonar-scanner"
 		}*/
 		
