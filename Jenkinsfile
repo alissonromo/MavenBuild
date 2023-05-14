@@ -6,7 +6,7 @@ node(){
 		checkout changelog: false, poll: false, scm: scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHubCreds', url: 'https://github.com/anujdevopslearn/MavenBuild']])
 	}
 	stage('Build Automation'){
-		withMaven(maven: 'mvn') {
+		withMaven(maven: 'Maven 3.9.2') {
 		    sh """
 			ls -lart
 			mvn clean install
